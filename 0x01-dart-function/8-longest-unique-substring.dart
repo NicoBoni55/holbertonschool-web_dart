@@ -1,8 +1,7 @@
 String longestUniqueSubstring(String str) {
     String repeat = "";
-    bool encontrado = false;
-
     for (int i = 0; i < str.length; i++) {
+    bool encontrado = false;
         for (int j = 0; j < repeat.length; j++) {
             if (str[i] == repeat[j]) {
                 encontrado = true;
